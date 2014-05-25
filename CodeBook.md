@@ -1,7 +1,7 @@
 Please note:
 
-1. To extract the measurements on the mean and standard deviation for each measurement, only columns with names that contain "mean" or "std" are selected.
-2. To appropriately label the data set with descriptive names, gsub() function is used to change variable names, where "-" is replaced with "." and "()" is removed.
+1. To extract the measurements on the mean and standard deviation for each measurement, only columns with names that contain "mean" or "std" are selected, so similar names like "meanFreq" are not included. 
+2. To appropriately label the data set with descriptive names, gsub() function is used to change variable names, where "-" is replaced with "." and "()" is removed. Capital letters are not converted to lower cases, as it's more readable with capital letters, at least to me.
 
 
 |  | Variable Name      |Description                                                                                   |
