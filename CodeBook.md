@@ -4,9 +4,9 @@ Please note:
 2. To appropriately label the data set with descriptive names, gsub() function is used to change variable names, where "-" is replaced with "." and "()" is removed. Capital letters are not converted to lower cases, as it's more readable with capital letters, at least to me.
 
 
-|  | Variable Name                     | Value Type | Description                                                                                   |
+|  | Variable Name                     | Value Type      | Description                                                                                   |
 |---------------|---------------------------|-------------|------------------------------------------------------------------------------------|
-| 1             | subject                   | integer     | Subject id number                                                                  |
+| 1             | subject                   | integer     | Subject id number: 1 - 30                                                                  |
 | 2             | activity                  | factor      | Activity: walking, walking upstairs, walking downstairs, sitting, standing, laying |
 | 3             | tBodyAcc.mean.X           | numeric     | Mean value of tBodyAcc in x direction                                              |
 | 4             | tBodyAcc.mean.Y           | numeric     | Mean value of tBodyAcc in y direction                                              |
