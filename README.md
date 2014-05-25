@@ -26,6 +26,7 @@ General steps of what run_analysis.R does
 
 
 Additional notes
+
 1. To extract only the measurements on the mean and standard deviation for each measurement, only columns with names that contain "mean" or "std" are selected.
 2. To appropriately label the data set with descriptive names, gsub() function is used to change variable names, where "-" is replaced with "." and "()" is removed.
 
