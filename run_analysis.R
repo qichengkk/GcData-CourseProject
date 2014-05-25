@@ -11,6 +11,10 @@ names(dataX)<-features$V2
 dataMeanStd<-subset(dataX, select= setdiff(grep("mean|std", names(dataX), value=TRUE), 
                                  grep("meanFreq", names(dataX), value=TRUE)))
 
+#use appropriate labels for the data set, repalce "-" with "." and remove "()"
+names(dataMeanStd) <- gsub("-", ".", names(dataMeanStd))
+names(dataMeanStd) <- gsub("[()]", "", names(dataMeanStd))
+
 #read and combine y_train and y_test to dataY
 trainY <- read.table("./train/y_train.txt", header = FALSE)
 testY <- read.table("./test/y_test.txt", header = FALSE)
@@ -25,6 +29,7 @@ dataY$activity[dataY$activity == 4] <- "SITTING"
 dataY$activity[dataY$activity == 5] <- "STANDING"
 dataY$activity[dataY$activity == 6] <- "LAYING"
 
+#not used strategy
 #activityLabels <- read.table("./activity_labels.txt", header = FALSE)
 #dataAct <- merge(activityLabels, dataY, by.x="V1", by.y="V1", all=TRUE)
 
@@ -39,7 +44,7 @@ data <- cbind(dataSub, dataY, dataMeanStd)
 
 #Create a second, independent tidy data set with the average of each variable 
 #for each activity and each subject. 
-library("reshape")
+library("reshape2")
 melt <- melt(data,id=c("subject","activity"))
 data2 <- dcast(melt, subject + activity ~ variable, mean)
 
