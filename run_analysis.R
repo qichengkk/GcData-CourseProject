@@ -37,7 +37,7 @@ names(dataSub) <- "subject"
 #combine dataSub, dataY and dataMeanStd
 data <- cbind(dataSub, dataY, dataMeanStd)
 
-#Creates a second, independent tidy data set with the average of each variable 
+#Create a second, independent tidy data set with the average of each variable 
 #for each activity and each subject. 
 library("reshape")
 melt <- melt(data,id=c("subject","activity"))
