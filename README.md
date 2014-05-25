@@ -15,3 +15,11 @@ How the script works
 2. Unzip the downloaded dataset, and put run_analysis.R file inside.
 3. Run the R file, in the directory of your data set, you should be able to find a new file named tidy_data.txt, which contains the average of each variable from the UCI HAR dataset for each activity and each subject.
 
+
+General steps of what run_analysis.R does
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive names. 
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
