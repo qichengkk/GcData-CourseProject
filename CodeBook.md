@@ -1,6 +1,6 @@
 |  | Variable Name      |Description                                                                                   |
 |---------------|---------------------------|------------------------------------------------------------------------------------|
-| 1             | subject                   | Subject id number                                                                  |
+| 1             | subject                   | Subject id number: 1-30                                                                  |
 | 2             | activity                  | Activity: walking, walking upstairs, walking downstairs, sitting, standing, laying |
 | 3             | tBodyAcc.mean.X           | Mean value of tBodyAcc in x direction                                              |
 | 4             | tBodyAcc.mean.Y           | Mean value of tBodyAcc in y direction                                              |
