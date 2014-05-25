@@ -1,4 +1,4 @@
-|  | Variable Name              |Description                                                                                   |
+|  | Variable Name      |Description                                                                                   |
 |---------------|---------------------------|------------------------------------------------------------------------------------|
 | 1             | subject                   | Subject id number                                                                  |
 | 2             | activity                  | Activity: walking, walking upstairs, walking downstairs, sitting, standing, laying |
